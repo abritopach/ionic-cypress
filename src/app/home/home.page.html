@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    E2E cypress test in Ionic.
+    <ion-item>
+      <ion-label position="floating">Text input</ion-label>
+      <ion-input [(ngModel)]="text" type="text" (ionChange)="onChangeText()"></ion-input>
+    </ion-item>
+    <ion-button color="primary" [disabled]="isDisabled">Accept</ion-button>
+    <p>You have written: {{text}}</p>
+  </div>
+</ion-content>
